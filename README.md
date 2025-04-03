@@ -9,9 +9,11 @@ By predicting what would have happened in the absence of an intervention and com
 The model follows a **state-space representation**:
 
 **Observation Equation**:
+
 $$ y_t = Z_t^T \alpha_t + \epsilon_t, \quad \epsilon_t \sim N(0, \sigma^2) $$
 
 **State Equation**:
+
 $$ \alpha_{t+1} = T_t \alpha_t + R_t \eta_t, \quad \eta_t \sim N(0, Q_t) $$
 
 where:
